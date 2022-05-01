@@ -21,6 +21,10 @@ gem 'tailwindcss-rails'
 
 gem 'jbuilder'
 
+gem 'haml-rails', '~> 2.0'
+
+gem 'devise', '~> 4.8', '>= 4.8.1'
+
 gem 'redis', '~> 4.0'
 
 gem 'tzinfo-data', platforms: %i[ mingw mswin x64_mingw jruby ]
