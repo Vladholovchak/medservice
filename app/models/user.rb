@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :validatable
 
+  belongs_to :profile, polymorphic: true
+
   validates :phone, uniqueness: true, presence: true
 
   def email_required?
