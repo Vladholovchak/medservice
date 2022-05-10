@@ -21,9 +21,15 @@ gem 'tailwindcss-rails'
 
 gem 'jbuilder'
 
+gem 'sass-rails'
+
 gem 'haml-rails', '~> 2.0'
 
 gem 'devise', '~> 4.8', '>= 4.8.1'
+
+gem 'pundit', '~> 2.2'
+
+gem 'activeadmin', '~> 2.12'
 
 gem 'redis', '~> 4.0'
 

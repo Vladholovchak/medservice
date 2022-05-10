@@ -1,2 +1,5 @@
 en:
-  hello: "Hello world"
+  active_admin:
+    devise:
+      phone:
+        title: 'phone'

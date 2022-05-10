@@ -16,8 +16,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_05_215703) do
 
   create_table "doctors", force: :cascade do |t|
     t.bigint "speciality_id"
-    t.string "first_name", null: false
-    t.string "last_name", null: false
     t.string "description", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -25,8 +23,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_05_215703) do
   end
 
   create_table "patients", force: :cascade do |t|
-    t.string "first_name", null: false
-    t.string "last_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -40,6 +36,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_05_215703) do
   create_table "users", force: :cascade do |t|
     t.string "profile_type"
     t.bigint "profile_id"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.integer "role", null: false
     t.string "phone", null: false
     t.string "encrypted_password", null: false
     t.datetime "created_at", null: false
